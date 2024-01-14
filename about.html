@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employment website</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/date-picker.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- css-link -->
+</head>
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+<!-- pop-up -->
+  <div class="modal fade" id="ModalApplyJobForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content apply-job-form">
+      <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body pl-30 pr-30 pt-50">
+        <div class="text-center">
+          <p class="font-sm text-brand-2">Job Application </p>
+          <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">Start your career today</h2>
+          <p class="font-sm text-muted mb-30">Please fill in your information and send it to the employer.                   </p>
+        </div>
+        <form class="login-register text-start mt-20 pb-30" action="#">
+          <div class="form-group">
+            <label class="form-label" for="input-1">Full Name *</label>
+            <input class="form-control" id="input-1" type="text" required="" name="fullname" placeholder="Mark Right">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="input-2">Email *</label>
+            <input class="form-control" id="input-2" type="email" required="" name="emailaddress" placeholder="markright@gmail.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="number">Contact Number *</label>
+            <input class="form-control" id="number" type="text" required="" name="phone" placeholder="(+01) 234 567 89">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="des">Description</label>
+            <input class="form-control" id="des" type="text" required="" name="Description" placeholder="Your description...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="file">Upload Resume</label>
+            <input class="form-control" id="file" name="resume" type="file">
+          </div>
+          <div class="login_footer form-group d-flex justify-content-between">
+            <label class="cb-container">
+              <input type="checkbox"><span class="text-small">Agree our terms and policy</span><span class="checkmark"></span>
+            </label><a class="text-muted" href="page-contact.html">Lean more</a>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-default hover-up w-100" type="submit" name="login">Apply Job</button>
+          </div>
+          <div class="text-muted text-center">Do you need support? <a href="page-contact.html">Contact Us</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pop-up -->
+<header class="header sticky-bar">
+  <div class="container">
+    <div class="main-header">
+      <div class="header-left">
+        <div class="header-logo"><a class="d-flex" href="home.html"><img alt="Box" src="img/logo.jpeg"></a></div>
+      </div>
+      <div class="header-nav">
+        <nav class="nav-main-menu">
+          <ul class="main-menu">
+            <li><a class="active" href="home.html">Home</a>
+            </li>
+            <li class="has-children"><a href="">Find a Job</a>
+              <ul class="sub-menu">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="post.html">Post a Job</a></li>
+              </ul>
+            </li>
+            <li><a href="recruiters.html">Recruiters</a> </li>
+          
+            <li class="has-children"><a href="blog-grid.html">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="pricing.html">Pricing Plan</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="term.html">Terms & Conditions</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="signin.html">Signin</a></li>
+                <li><a href="reset-password.html">Reset Password</a></li>
+              </ul>
+            </li>
+            <li ><a href="blog.html">Blog</a>
+            </li>
+            <li class="dashboard"><a href="" target="_blank">Dashboard</a></li>
+          </ul>
+        </nav>
+        <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+      </div>
+      <div class="header-right">
+        <div class="block-signin"><a class="text-link-bd-btom hover-up" href="register.html">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="signin.html">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+  <div class="mobile-header-wrapper-inner">
+    <div class="mobile-header-content-area">
+      <div class="perfect-scroll">
+        <div class="mobile-search mobile-header-border mb-30">
+          <form action="#">
+            <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start-->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="has-children"><a class="active" href="index.html">Home</a>
+              </li>
+              <li class="has-children"><a href="">Find a Job</a>
+                <ul class="sub-menu">
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="post.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li ><a href="recruiters.html">Recruiters</a>
+              </li>
+            
+              <li class="has-children"><a href="">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="pricing.html">Pricing Plan</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="term.html">Terms & Conditions</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  <li><a href="signin.html">Signin</a></li>
+                  <li><a href="reset-password.html">Reset Password</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="">Blog</a>
+              </li>
+              <li><a href="" target="_blank">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-account">
+          <h6 class="mb-10">Your Account</h6>
+          <ul class="mobile-menu font-heading">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Work Preferences</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="signout.html">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+  <div class="mobile-header-wrapper-inner">
+    <div class="mobile-header-content-area">
+      <div class="perfect-scroll">
+        <div class="mobile-search mobile-header-border mb-30">
+          <form action="#">
+            <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start-->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="has-children"><a class="active" href="index.html">Home</a>
+              </li>
+              <li class="has-children"><a href="">Find a Job</a>
+                <ul class="sub-menu">
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="post.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li ><a href="recruiters.html">Recruiters</a>
+              </li>
+              
+              <li class="has-children"><a href="">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="pricing.html">Pricing Plan</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="term.html">Terms & Conditions</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  <li><a href="signin.html">Signin</a></li>
+                  <li><a href="reset-password.html">Reset Password</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><a href="blog.html">Blog</a>
+              </li>
+              <li><a href="" target="_blank">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-account">
+          <h6 class="mb-10">Your Account</h6>
+          <ul class="mobile-menu font-heading">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Work Preferences</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="signout.html">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+      </div>
+    </div>
+  </div>
+</div>
+      <main class="main">
+        <section class="section-box">
+          <div class="page-title-area bg-1">
+            <div class="container">
+              <div class="page-title-content">
+                <h2>About Us</h2>
+                <ul class="breadcrumbs">
+                  <li><a class="home-icon" href="#">Home</a></li>
+                  <li class="active">About Us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+
+                    <!-- START ABOUT -->
+                    <section class="section overflow-hidden">
+                        <div class="container">
+                            <div class="row align-items-center g-0">
+                                <div class="col-lg-6">
+                                    <div class="section-title me-lg-5">
+                                        <h6 class="sub-title wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">About Us</h6>
+                                        <h2 class="title mb-4 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Why <span class="aboutspan fw-bold">35,000+</span> People Trust On Box?</h2>
+
+                                        <p class="text-muted wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Start working with Box that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content.</p>
+                                        
+                                        <div class="row mt-4 pt-2 wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled about-list text-muted mb-0 mb-md-3">
+                                                    <li> Digital Marketing Solutions</li>
+                                                    <li> Our Talented & Experienced Marketing Agency</li>
+                                                    <li> Creative Design</li>
+                                                    <li> New jobs Innovation</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled about-list text-muted">
+                                                    <li> Create Resume</li>
+                                                    <li> 5000+ Comnpanies</li>
+                                                    <li> Our Blog</li>
+                                                    <li> and more...</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                                <a href="javascript:void(0)" class="btn btn-default btn-shadow ml-40 hover-up">Learn More <i class="fas fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-6">
+                                <div class="about-img mt-4 mt-lg-0 wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                    <img src="img/about.jpg" alt="" class="img-fluid rounded">
+                                </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </section>
+                    <!-- END ABOUT -->
+
+<!--Why You Choose Job Among Other Job Site -->
+<section class="space-pb">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0 pe-lg-5">
+        <div class="row">
+          <div class="col-sm-7">
+            <img class="img-fluid w-100 wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" src="img/01.png" alt="">
+          </div>
+          <div class="col-sm-5 mt-sm-5 mt-4">
+            <img class="img-fluid mb-sm-2 w-100 wow fadeInDown animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" src="img/02.png" alt="">
+            <div class=" mt-3 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <a class="popup-icon  bg-holder bg-overlay-black-80" data-fancybox href="https://youtu.be/YXgXw25E5RU">
+                <i class="fas fa-play" style="color: #a1b5d9;"></i>
+                <img class="img-fluid w-100" src="img/03.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 pt-2 pt-sm-3 pt-md-0">
+        <div class="section-title">
+          <h2 class="title wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Why You Choose Job Among Other Job Site?</h2>
+          <p class="wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">I truly believe Augustine’s words are true and if you look at history you know it is true. There are many people in the world with amazing talents. who realize only a small percentage of their potential. We all know people who live this truth.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="d-flex mb-lg-5 mb-4">
+              <i class="fas fa-users font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Best talented people</h6>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex mb-lg-5 mb-4">
+              <i class="fas fa-file-signature font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Easy to find candidate</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="d-flex mb-md-0 mb-4">
+              <i class="fas fa-comments font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Easy to communicate</h6>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex">
+              <i class="fas fa-globe-africa font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Global recruitment option</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--Why You Choose Job Among Other Job Site -->
+  <!-- Start Global Talent Area -->
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-md-6">
+          <div class="global-talent-content">
+            <div class="section-title">
+            <h3 class="title wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Global Talent</h3>
+          </div>
+            <h2 class="wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Grow Your Career, Dream Your Jobs Are Waiting</h2>
+  
+            <ul class="wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <li>
+                <img src="img/talent-dot-1.png" alt="Image">
+                Full & Part-Time Jobs
+              </li>
+              
+              <li>
+                <img src="img/talent-dot-2.png" alt="Image">
+                Employee & Freelance
+              </li>
+  
+              <li>
+                <img src="img/talent-dot-3.png" alt="Image">
+                Flexible On-Site
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-lg-5 col-md-6">
+          <div class="box-site-status wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <h3>Box Site Status</h3>
+            
+            <div class="site-status">
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single-counter">
+  
+                    <h2>
+                      <span class="odometer" data-count="10523">00</span> 
+                    </h2>
+      
+                    <p>Jobs Added</p>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single-counter">
+  
+                    <h2>
+                      <span class="odometer" data-count="123843">00</span> 
+                    </h2>
+      
+                    <p>Companies</p>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single-counter">
+  
+                    <h2>
+                      <span class="odometer" data-count="20537">00</span> 
+                    </h2>
+      
+                    <p>Resume</p>
+                  </div>
+                </div>
+  
+                <div class="col-lg-6 col-sm-6">
+                  <div class="single-counter">
+  
+                    <h2>
+                      <span class="odometer" data-count="18523">00</span> 
+                    </h2>
+      
+                    <p>Members</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Global Talent Area -->
+   
+    <!-- testimonial Start -->
+    <section class="section">
+      <div class="container">
+      <div class="row">
+      <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+      <div class="text-center">
+        <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Our Testimonials</h2>
+        <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">What Our Client Says</p>
+      </div>
+      </div>
+      </div>
+      <div class="testimonial-slider-three owl-carousel">
+      <div class="testimonial-card style3">
+      <span class="quote-icon">
+        <i class="fas fa-quote-right"></i>
+      </span>
+      <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+      <div class="testimonial-card-thumb">
+      <div class="client-info-wrap">
+      <div class="client-img">
+      <img src="img/client-7.jpg" alt="Image">
+      </div>
+      <div class="client-info">
+      <h4>Shonda Leer</h4>
+      <span>Director, BAT</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="testimonial-card style3">
+       <span class="quote-icon">
+        <i class="fas fa-quote-right"></i>
+      </span>
+      <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+      <div class="testimonial-card-thumb">
+      <div class="client-info-wrap">
+      <div class="client-img">
+      <img src="img/client-1.jpg" alt="Image">
+      </div>
+      <div class="client-info">
+      <h4>Alex Cruis</h4>
+      <span>CEO, IBAC</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="testimonial-card style3">
+      <span class="quote-icon">
+        <i class="fas fa-quote-right"></i>
+      </span>
+      <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+      <div class="testimonial-card-thumb">
+      <div class="client-info-wrap">
+      <div class="client-img">
+      <img src="img/client-2.jpg" alt="Image">
+      </div>
+      <div class="client-info">
+      <h4>Marion Ott</h4>
+      <span>Founder, Olleo</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="testimonial-card style3">
+      <span class="quote-icon">
+        <i class="fas fa-quote-right"></i>
+      </span>
+      <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+      <div class="testimonial-card-thumb">
+      <div class="client-info-wrap">
+      <div class="client-img">
+      <img src="img/client-3.jpg" alt="Image">
+      </div>
+      <div class="client-info">
+      <h4>Harry Jackson</h4>
+      <span>Enterpreneur</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="testimonial-card style3">
+      <span class="quote-icon">
+        <i class="fas fa-quote-right"></i>
+      </span>
+      <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+      <div class="testimonial-card-thumb">
+      <div class="client-info-wrap">
+      <div class="client-img">
+      <img src="img/client-4.jpg" alt="Image">
+      </div>
+      <div class="client-info">
+      <h4>Brock Lee</h4>
+      <span>Developer</span>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+    <!-- testimonial end -->
+<!-- newsletter start -->
+<section class="section mt-50 mb-20">
+  <div class="container">
+    <div class="box-newsletter">
+      <div class="row">
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-left.png" alt="joxBox"></div>
+        <div class="col-lg-12 col-xl-6 col-12">
+          <h2 class="text-md-newsletter text-center">New Things Will Always<br> Update Regularly</h2>
+          <div class="box-form-newsletter mt-40">
+            <form class="form-newsletter">
+              <input class="input-newsletter" type="text" value="" placeholder="Enter your email here">
+              <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-right.png" alt="joxBox"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- newsletter end -->
+<section class="section-box mt-50 mb-50">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">News and Blog</h2>
+      <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Get the latest news, updates and tips</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mt-50">
+      <div class="box-swiper style-nav-top">
+        <div class="swiper-container swiper-group-3 swiper">
+          <div class="swiper-wrapper pb-70 pt-5">
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big3.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Work-From-Home Jobs That Pay Well</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/ava_1.png"><span class="color-white font-sm mr-25">Alice Json</span><span class="color-white font-sm">29 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big3.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Work-From-Home Jobs That Pay Well</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/ava_1.png"><span class="color-white font-sm mr-25">Alice Json</span><span class="color-white font-sm">29 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big2.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Recruiter and Land Your Dream Job</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/user1.png"><span class="color-white font-sm mr-25">Thompson</span><span class="color-white font-sm">28 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="text-center"><a class="btn btn-brand-1 btn-icon-load mt--30 hover-up" href="blog-grid.html">Load More Posts</a></div>
+    </div>
+  </div>
+</section>
+</main>
+ <!-- START FOOTER -->
+ <section class="bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+                  <h4 class="text-white mb-4">Joblab</h4>
+                  <p class="text-white-50">It is a long established fact that a reader will be of a page reader
+                      will be of at its layout.</p>
+                  <h6 class="text-white mt-3">Follow Us on:</p>
+                  <ul class="footer-social-menu list-inline mb-0">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Company</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                      <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                      <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                      <li><a href="team.html"><i class="fas fa-chevron-right"></i> Team</a></li>
+                      <li><a href="pricing.html"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">For Jobs</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Feature</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Credit</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Support</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                      <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQ'S</a></li>
+                      <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+            <div class="footer-item mt-4 mt-lg-0">
+                <h6 class="text-white fs-16 mb-4">Contact</h6>
+                <ul class="list-unstyled footer-list address mb-0">
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <a href="">+1 (768) 8765-787</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:</span>
+                    <span>Phone:</span>
+                    <a href="">joblab@gmail.com</a>
+                  </li>
+                  <li class="location">
+                    <i class="fas fa-map-pin"></i>
+                    <span>Address:</span>
+                    6890 Blvd, The Bronx, NY 1058 New York, USA
+                  </li>
+                </ul>
+            </div>
+        </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+</section>
+<!-- END FOOTER -->
+
+   <!-- START FOOTER-ALT -->
+   <div class="footer-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-white-50 text-center mb-0">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Joblab - Job Listing Page
+                    Website by <a href="" target="_blank"
+                        class="text-reset text-decoration-underline">Blaqcoder</a>
+                </p>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</div>
+<!-- END FOOTER -->
+ <!-- back to top area start -->
+ <div class="back-to-top">
+  <span class="back-top"><i class="fa fa-angle-up"></i></span>
+</div>
+<!-- back to top area end -->
+
+     <!-- js-link -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ <script src="js/wow.js"></script>
+ <script src="js/isotope.js"></script>
+ <script src="js/select2.min.js"></script>
+ <script src="js/scrollup.js"></script>
+ <script src="js/bootstrap-datepicker.min.js"></script>
+ <script src="js/nice-select.min.js"></script>
+ <script src="js/perfect-scrollbar.min.js"></script>
+ <script src="js/jquery.appear.min.js"></script>
+ <script src="js/odometer.min.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/app.js"></script>
+</body>
+</html>

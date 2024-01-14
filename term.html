@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employment website</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/date-picker.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- css-link -->
+</head>
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+<header class="header sticky-bar">
+  <div class="container">
+    <div class="main-header">
+      <div class="header-left">
+        <div class="header-logo"><a class="d-flex" href="home.html"><img alt="Box" src="img/logo.jpeg"></a></div>
+      </div>
+      <div class="header-nav">
+        <nav class="nav-main-menu">
+          <ul class="main-menu">
+            <li><a class="active" href="home.html">Home</a>
+            </li>
+            <li class="has-children"><a href="">Find a Job</a>
+              <ul class="sub-menu">
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="post.html">Post a Job</a></li>
+              </ul>
+            </li>
+            <li><a href="recruiters.html">Recruiters</a> </li>
+          
+            <li class="has-children"><a href="blog-grid.html">Pages</a>
+              <ul class="sub-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="pricing.html">Pricing Plan</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="term.html">Terms & Conditions</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="signin.html">Signin</a></li>
+                <li><a href="reset-password.html">Reset Password</a></li>
+              </ul>
+            </li>
+            <li ><a href="blog.html">Blog</a>
+            </li>
+            <li class="dashboard"><a href="" target="_blank">Dashboard</a></li>
+          </ul>
+        </nav>
+        <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+      </div>
+      <div class="header-right">
+        <div class="block-signin"><a class="text-link-bd-btom hover-up" href="register.html">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="signin.html">Sign in</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+  <div class="mobile-header-wrapper-inner">
+    <div class="mobile-header-content-area">
+      <div class="perfect-scroll">
+        <div class="mobile-search mobile-header-border mb-30">
+          <form action="#">
+            <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start-->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="has-children"><a class="active" href="index.html">Home</a>
+              </li>
+              <li class="has-children"><a href="">Find a Job</a>
+                <ul class="sub-menu">
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="post.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li ><a href="recruiters.html">Recruiters</a>
+              </li>
+            
+              <li class="has-children"><a href="">Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="term.html">Terms & Conditions</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+                    <li><a href="reset-password.html">Reset Password</a></li>
+                  </ul>
+              </li>
+              <li class="has-children"><a href="">Blog</a>
+              </li>
+              <li><a href="" target="_blank">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-account">
+          <h6 class="mb-10">Your Account</h6>
+          <ul class="mobile-menu font-heading">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Work Preferences</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="signout.html">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+  <div class="mobile-header-wrapper-inner">
+    <div class="mobile-header-content-area">
+      <div class="perfect-scroll">
+        <div class="mobile-search mobile-header-border mb-30">
+          <form action="#">
+            <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+          </form>
+        </div>
+        <div class="mobile-menu-wrap mobile-header-border">
+          <!-- mobile menu start-->
+          <nav>
+            <ul class="mobile-menu font-heading">
+              <li class="has-children"><a class="active" href="index.html">Home</a>
+              </li>
+              <li class="has-children"><a href="">Find a Job</a>
+                <ul class="sub-menu">
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="post.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li ><a href="recruiters.html">Recruiters</a>
+              </li>
+              
+              <li class="has-children"><a href="">Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="term.html">Terms & Conditions</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+                    <li><a href="reset-password.html">Reset Password</a></li>
+                  </ul>
+              </li>
+              <li class="has-children"><a href="blog.html">Blog</a>
+              </li>
+              <li><a href="" target="_blank">Dashboard</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-account">
+          <h6 class="mb-10">Your Account</h6>
+          <ul class="mobile-menu font-heading">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Work Preferences</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Go Pro</a></li>
+            <li><a href="signout.html">Sign Out</a></li>
+          </ul>
+        </div>
+        <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+      </div>
+    </div>
+  </div>
+</div>
+      <main class="main">
+        <section class="section-box">
+          <div class="page-title-area bg-1">
+            <div class="container">
+              <div class="page-title-content">
+                <h2>Terms Conditions</h2>
+                <ul class="breadcrumbs">
+                  <li><a class="home-icon" href="#">Home</a></li>
+                  <li class="active">Terms Conditions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+          
+                   
+
+<!-- Start Terms & Conditions Area -->
+<section class="terms-conditions-area ptb-100">
+    <div class="container">
+        <div class="terms-conditions">
+            <div class="conditions-content">
+                <h2>Introduction To Joblab Terms And Conditions</h2>
+
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.</p>
+            </div>
+
+            <div class="conditions-content">
+                <h3>Resume Display</h3>
+
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores earebum.</p> 
+            </div>
+
+            <div class="conditions-content">
+                <h3>Resume Development</h3>
+
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+
+                <ul>
+                    <li>Stet clita kasd gubergren, no sea takimata sanctus</li>
+                    <li>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</li>
+                    <li> Consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+                    <li>Aliquyam erat, sed diam voluptua</li>
+                </ul>
+            </div>
+
+            <div class="conditions-content">
+                <h3>Resumes And Recommended Jobs</h3>
+
+                <ul>
+                    <li>Stet clita kasd gubergren, no sea takimata sanctus</li>
+                    <li>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</li>
+                    <li> Consetetur sadipscing elitr, sed diam nonumy eirmod tempor</li>
+                    <li>Aliquyam erat, sed diam voluptua</li>
+                </ul>
+            </div>
+
+            <div class="conditions-content">
+                <h3>Cancellation</h3>
+
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores rebum.</p>
+            </div>
+
+            <div class="conditions-content mb-0">
+                <h3>Warning</h3>
+
+                <p class="mb-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est dolor sit amet, consetetu.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Terms & Conditions Area -->
+<!-- newsletter start -->
+<section class="section mt-50 mb-20">
+  <div class="container">
+    <div class="box-newsletter">
+      <div class="row">
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-left.png" alt="joxBox"></div>
+        <div class="col-lg-12 col-xl-6 col-12">
+          <h2 class="text-md-newsletter text-center">New Things Will Always<br> Update Regularly</h2>
+          <div class="box-form-newsletter mt-40">
+            <form class="form-newsletter">
+              <input class="input-newsletter" type="text" value="" placeholder="Enter your email here">
+              <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-right.png" alt="joxBox"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- newsletter end -->
+</main>
+ <!-- START FOOTER -->
+ <section class="bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+                  <h4 class="text-white mb-4">Joblab</h4>
+                  <p class="text-white-50">It is a long established fact that a reader will be of a page reader
+                      will be of at its layout.</p>
+                  <h6 class="text-white mt-3">Follow Us on:</p>
+                  <ul class="footer-social-menu list-inline mb-0">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Company</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                      <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                      <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                      <li><a href="team.html"><i class="fas fa-chevron-right"></i> Team</a></li>
+                      <li><a href="pricing.html"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">For Jobs</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Feature</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Credit</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Support</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                      <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQ'S</a></li>
+                      <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+            <div class="footer-item mt-4 mt-lg-0">
+                <h6 class="text-white fs-16 mb-4">Contact</h6>
+                <ul class="list-unstyled footer-list address mb-0">
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <a href="">+1 (768) 8765-787</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:</span>
+                    <span>Phone:</span>
+                    <a href="">joblab@gmail.com</a>
+                  </li>
+                  <li class="location">
+                    <i class="fas fa-map-pin"></i>
+                    <span>Address:</span>
+                    6890 Blvd, The Bronx, NY 1058 New York, USA
+                  </li>
+                </ul>
+            </div>
+        </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+</section>
+<!-- END FOOTER -->
+
+   <!-- START FOOTER-ALT -->
+   <div class="footer-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-white-50 text-center mb-0">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Joblab - Job Listing Page
+                    Website by <a href="" target="_blank"
+                        class="text-reset text-decoration-underline">Blaqcoder</a>
+                </p>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</div>
+<!-- END FOOTER -->
+ <!-- back to top area start -->
+ <div class="back-to-top">
+    <span class="back-top"><i class="fa fa-angle-up"></i></span>
+  </div>
+  <!-- back to top area end -->
+     <!-- js-link -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ <script src="js/wow.js"></script>
+ <script src="js/isotope.js"></script>
+ <script src="js/select2.min.js"></script>
+ <script src="js/scrollup.js"></script>
+ <script src="js/bootstrap-datepicker.min.js"></script>
+ <script src="js/nice-select.min.js"></script>
+ <script src="js/perfect-scrollbar.min.js"></script>
+ <script src="js/jquery.appear.min.js"></script>
+ <script src="js/odometer.min.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/app.js"></script>
+</body>
+</html>

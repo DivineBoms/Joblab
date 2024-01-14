@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employment website</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/date-picker.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/nice-select.min.css">
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- css-link -->
+</head>
+<body>
+  <!-- start preloader -->
+  <div class="preloader" id="preloader"></div>
+  <!-- end preloader -->
+  <header class="header sticky-bar">
+    <div class="container">
+      <div class="main-header">
+        <div class="header-left">
+          <div class="header-logo"><a class="d-flex" href="home.html"><img alt="Box" src="img/logo.jpeg"></a></div>
+        </div>
+        <div class="header-nav">
+          <nav class="nav-main-menu">
+            <ul class="main-menu">
+              <li><a class="active" href="home.html">Home</a>
+              </li>
+              <li class="has-children"><a href="">Find a Job</a>
+                <ul class="sub-menu">
+                  <li><a href="jobs.html">Jobs</a></li>
+                  <li><a href="post.html">Post a Job</a></li>
+                </ul>
+              </li>
+              <li><a href="recruiters.html">Recruiters</a> </li>
+            
+              <li class="has-children"><a href="blog-grid.html">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="pricing.html">Pricing Plan</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="term.html">Terms & Conditions</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  <li><a href="signin.html">Signin</a></li>
+                  <li><a href="reset-password.html">Reset Password</a></li>
+                </ul>
+              </li>
+              <li ><a href="blog.html">Blog</a>
+              </li>
+              <li class="dashboard"><a href="" target="_blank">Dashboard</a></li>
+            </ul>
+          </nav>
+          <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+        </div>
+        <div class="header-right">
+          <div class="block-signin"><a class="text-link-bd-btom hover-up" href="register.html">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="signin.html">Sign in</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-content-area">
+        <div class="perfect-scroll">
+          <div class="mobile-search mobile-header-border mb-30">
+            <form action="#">
+              <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+            </form>
+          </div>
+          <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start-->
+            <nav>
+              <ul class="mobile-menu font-heading">
+                <li class="has-children"><a class="active" href="index.html">Home</a>
+                </li>
+                <li class="has-children"><a href="">Find a Job</a>
+                  <ul class="sub-menu">
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="post.html">Post a Job</a></li>
+                  </ul>
+                </li>
+                <li ><a href="recruiters.html">Recruiters</a>
+                </li>
+              
+                <li class="has-children"><a href="">Pages</a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="term.html">Terms & Conditions</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+                    <li><a href="reset-password.html">Reset Password</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="">Blog</a>
+                </li>
+                <li><a href="" target="_blank">Dashboard</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-account">
+            <h6 class="mb-10">Your Account</h6>
+            <ul class="mobile-menu font-heading">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Work Preferences</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Go Pro</a></li>
+              <li><a href="signout.html">Sign Out</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-content-area">
+        <div class="perfect-scroll">
+          <div class="mobile-search mobile-header-border mb-30">
+            <form action="#">
+              <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+            </form>
+          </div>
+          <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start-->
+            <nav>
+              <ul class="mobile-menu font-heading">
+                <li class="has-children"><a class="active" href="index.html">Home</a>
+                </li>
+                <li class="has-children"><a href="">Find a Job</a>
+                  <ul class="sub-menu">
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="post.html">Post a Job</a></li>
+                  </ul>
+                </li>
+                <li ><a href="recruiters.html">Recruiters</a>
+                </li>
+                
+                <li class="has-children"><a href="">Pages</a>
+                  <ul class="sub-menu">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="term.html">Terms & Conditions</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="signin.html">Signin</a></li>
+                    <li><a href="reset-password.html">Reset Password</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="blog.html">Blog</a>
+                </li>
+                <li><a href="" target="_blank">Dashboard</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-account">
+            <h6 class="mb-10">Your Account</h6>
+            <ul class="mobile-menu font-heading">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Work Preferences</a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Go Pro</a></li>
+              <li><a href="signout.html">Sign Out</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <main class="main">
+        <section class="section-box">
+          <div class="page-title-area bg-1">
+            <div class="container">
+              <div class="page-title-content">
+                <h2>Contact Us</h2>
+                
+                <ul class="breadcrumbs">
+                  <li><a class="home-icon" href="#">Home</a></li>
+                  <li class="active">Contact Us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-box mt-80 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <div class="container">
+              <div class="box-info-contact">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-30"><a href="#"><img src="img/logo2.jpeg" alt=""></a>
+                    <div class="font-sm color-text-paragraph">205 North Michigan Avenue, Suite 810 Chicago, 60601, USA<br> Phone: (123) 456-7890<br> Email: <a href="#">joblab@gmail.com</a></div><a class="text-uppercase color-brand-2 link-map" href="#" data-toggle="modal" data-target="#exampleModalCenters">View map</a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <h6>London</h6>
+                    <p class="font-sm color-text-paragraph mb-20">2118 Thornridge Cir. Syracuse,<br class="d-none d-lg-block"> Connecticut 35624</p>
+                    <h6>New York</h6>
+                    <p class="font-sm color-text-paragraph mb-20">4517 Washington Ave.<br class="d-none d-lg-block"> Manchester, Kentucky 39495</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <h6>Chicago</h6>
+                    <p class="font-sm color-text-paragraph mb-20">3891 Ranchview Dr. Richardson,<br class="d-none d-lg-block"> California 62639</p>
+                    <h6>San Francisco</h6>
+                    <p class="font-sm color-text-paragraph mb-20">4140 Parker Rd. Allentown,<br class="d-none d-lg-block"> New Mexico 31134</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-30">
+                    <h6>Sysney</h6>
+                    <p class="font-sm color-text-paragraph mb-20">3891 Ranchview Dr. Richardson,<br class="d-none d-lg-block"> California 62639</p>
+                    <h6>Singapore</h6>
+                    <p class="font-sm color-text-paragraph mb-20">4140 Parker Rd. Allentown,<br class="d-none d-lg-block"> New Mexico 31134</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+           <!-- google-map -->
+           <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="modal fade" id="exampleModalCenters" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content2">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>    
+
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106376.55067285194!2d-7.657033437868472!3d33.57241080772838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d84f310fd3!2sCasablanca%2C%20Morocco!5e0!3m2!1sen!2sng!4v1679928058150!5m2!1sen!2sng" class="google-map__one" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+            </div>	
+        </div>
+        <!-- google-map -->
+         <!-- Apply for a loan In start -->
+    <section class="contact">
+      <div class="overlay pt-120 pb-120">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                      <div class="section-title me-5">
+                        <h3 class="title wow fadeInUp animated animated" data-wow-delay="400ms">Get in touch with us.</h3>
+                          <p class="text-muted wow fadeInUp animated animated" data-wow-delay="400ms">Fill up the form and our team will get back to you within 24 hours</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="row justify-content-center wow fadeInUp animated animated" data-wow-delay="400ms">
+                  <div class="col-lg-10">
+                      <div class="form-content">
+                          <form action="#">
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="single-input">
+                                          <label for="name">Name</label>
+                                          <input type="text" id="name" placeholder="What's your name?">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="single-input">
+                                          <label for="email">Email</label>
+                                          <input type="text" id="email" placeholder="What's your email?">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="single-input">
+                                          <label for="phone">Phone</label>
+                                          <input type="text" id="phone" placeholder="(123) 480 - 3540">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="single-input">
+                                          <label for="loan">Service interested in</label>
+                                          <input type="text" id="loan" placeholder="Ex. Auto Loan, Home Loan">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      <div class="single-input">
+                                          <label for="message">Message</label>
+                                          <textarea id="message" placeholder="I would like to get in touch with you..." cols="30" rows="10"></textarea>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="btn-area text-center">
+                                  <button class="btn btn-default btn-shadow ml-40 hover-up">Send Message</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Apply for a loan In end -->
+
+<!-- newsletter start -->
+<section class="section mt-50 mb-20">
+  <div class="container">
+    <div class="box-newsletter">
+      <div class="row">
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-left.png" alt="joxBox"></div>
+        <div class="col-lg-12 col-xl-6 col-12">
+          <h2 class="text-md-newsletter text-center">New Things Will Always<br> Update Regularly</h2>
+          <div class="box-form-newsletter mt-40">
+            <form class="form-newsletter">
+              <input class="input-newsletter" type="text" value="" placeholder="Enter your email here">
+              <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-right.png" alt="joxBox"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- newsletter end -->
+</main>
+ <!-- START FOOTER -->
+ <section class="bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+                  <h4 class="text-white mb-4">Joblab</h4>
+                  <p class="text-white-50">It is a long established fact that a reader will be of a page reader
+                      will be of at its layout.</p>
+                  <h6 class="text-white mt-3">Follow Us on:</p>
+                  <ul class="footer-social-menu list-inline mb-0">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Company</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                      <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                      <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                      <li><a href="team.html"><i class="fas fa-chevron-right"></i> Team</a></li>
+                      <li><a href="pricing.html"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">For Jobs</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Feature</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Credit</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Support</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                      <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQ'S</a></li>
+                      <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+            <div class="footer-item mt-4 mt-lg-0">
+                <h6 class="text-white fs-16 mb-4">Contact</h6>
+                <ul class="list-unstyled footer-list address mb-0">
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <a href="">+1 (768) 8765-787</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:</span>
+                    <span>Phone:</span>
+                    <a href="">joblab@gmail.com</a>
+                  </li>
+                  <li class="location">
+                    <i class="fas fa-map-pin"></i>
+                    <span>Address:</span>
+                    6890 Blvd, The Bronx, NY 1058 New York, USA
+                  </li>
+                </ul>
+            </div>
+        </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+</section>
+<!-- END FOOTER -->
+
+   <!-- START FOOTER-ALT -->
+   <div class="footer-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-white-50 text-center mb-0">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Joblab - Job Listing Page
+                    Website by <a href="" target="_blank"
+                        class="text-reset text-decoration-underline">Blaqcoder</a>
+                </p>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</div>
+<!-- END FOOTER -->
+ <!-- back to top area start -->
+ <div class="back-to-top">
+  <span class="back-top"><i class="fa fa-angle-up"></i></span>
+</div>
+<!-- back to top area end -->
+
+     <!-- js-link -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ <script src="js/wow.js"></script>
+ <script src="js/isotope.js"></script>
+ <script src="js/select2.min.js"></script>
+ <script src="js/scrollup.js"></script>
+ <script src="js/bootstrap-datepicker.min.js"></script>
+ <script src="js/nice-select.min.js"></script>
+ <script src="js/perfect-scrollbar.min.js"></script>
+ <script src="js/jquery.appear.min.js"></script>
+ <script src="js/odometer.min.js"></script>
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/app.js"></script>
+</body>
+</html>

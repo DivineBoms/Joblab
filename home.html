@@ -1,0 +1,2533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employment website</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cecd2c945d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/odometer.min.css">
+    <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- css-link -->
+</head>
+<body>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+<!-- pop-up -->
+  <div class="modal fade" id="ModalApplyJobForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content apply-job-form">
+      <button class="btn-close" type="button" data-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body pl-30 pr-30 pt-50">
+        <div class="text-center">
+          <p class="font-sm text-brand-2">Job Application </p>
+          <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">Start your career today</h2>
+          <p class="font-sm text-muted mb-30">Please fill in your information and send it to the employer.                   </p>
+        </div>
+        <form class="login-register text-start mt-20 pb-30" action="#">
+          <div class="form-group">
+            <label class="form-label" for="input-1">Full Name *</label>
+            <input class="form-control" id="input-1" type="text" required="" name="fullname" placeholder="Mark Right">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="input-2">Email *</label>
+            <input class="form-control" id="input-2" type="email" required="" name="emailaddress" placeholder="markright@gmail.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="number">Contact Number *</label>
+            <input class="form-control" id="number" type="text" required="" name="phone" placeholder="(+01) 234 567 89">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="des">Description</label>
+            <input class="form-control" id="des" type="text" required="" name="Description" placeholder="Your description...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="file">Upload Resume</label>
+            <input class="form-control" id="file" name="resume" type="file">
+          </div>
+          <div class="login_footer form-group d-flex justify-content-between">
+            <label class="cb-container">
+              <input type="checkbox"><span class="text-small">Agree our terms and policy</span><span class="checkmark"></span>
+            </label><a class="text-muted" href="contact.html">Lean more</a>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-default hover-up w-100" type="submit" name="login">Apply Job</button>
+          </div>
+          <div class="text-muted text-center">Do you need support? <a href="contact.html">Contact Us</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pop-up -->
+    <header class="header sticky-bar">
+        <div class="container">
+          <div class="main-header">
+            <div class="header-left">
+              <div class="header-logo"><a class="d-flex" href="home.html"><img alt="Box" src="img/logo.jpeg"></a></div>
+            </div>
+            <div class="header-nav">
+              <nav class="nav-main-menu">
+                <ul class="main-menu">
+                  <li><a class="active" href="home.html">Home</a>
+                  </li>
+                  <li class="has-children"><a href="">Find a Job</a>
+                    <ul class="sub-menu">
+                      <li><a href="jobs.html">Jobs</a></li>
+                      <li><a href="post.html">Post a Job</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="recruiters.html">Recruiters</a> </li>
+                
+                  <li class="has-children"><a href="blog-grid.html">Pages</a>
+                    <ul class="sub-menu">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="team.html">Team</a></li>
+                      <li><a href="pricing.html">Pricing Plan</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="term.html">Terms & Conditions</a></li>
+                      <li><a href="register.html">Register</a></li>
+                      <li><a href="signin.html">Signin</a></li>
+                      <li><a href="reset-password.html">Reset Password</a></li>
+                    </ul>
+                  </li>
+                  <li ><a href="blog.html">Blog</a>
+                  </li>
+                  <li class="dashboard"><a href="" target="_blank">Dashboard</a></li>
+                </ul>
+              </nav>
+              <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
+            </div>
+            <div class="header-right">
+              <div class="block-signin"><a class="text-link-bd-btom hover-up" href="register.html">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="signin.html">Sign in</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+        <div class="mobile-header-wrapper-inner">
+          <div class="mobile-header-content-area">
+            <div class="perfect-scroll">
+              <div class="mobile-search mobile-header-border mb-30">
+                <form action="#">
+                  <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+                </form>
+              </div>
+              <div class="mobile-menu-wrap mobile-header-border">
+                <!-- mobile menu start-->
+                <nav>
+                  <ul class="mobile-menu font-heading">
+                    <li class="has-children"><a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="has-children"><a href="">Find a Job</a>
+                      <ul class="sub-menu">
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="post.html">Post a Job</a></li>
+                      </ul>
+                    </li>
+                    <li ><a href="recruiters.html">Recruiters</a>
+                    </li>
+                  
+                    <li class="has-children"><a href="">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="pricing.html">Pricing Plan</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="term.html">Terms & Conditions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="signin.html">Signin</a></li>
+                        <li><a href="reset-password.html">Reset Password</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-children"><a href="">Blog</a>
+                    </li>
+                    <li><a href="" target="_blank">Dashboard</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mobile-account">
+                <h6 class="mb-10">Your Account</h6>
+                <ul class="mobile-menu font-heading">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Work Preferences</a></li>
+                  <li><a href="#">Account Settings</a></li>
+                  <li><a href="#">Go Pro</a></li>
+                  <li><a href="signout.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+        <div class="mobile-header-wrapper-inner">
+          <div class="mobile-header-content-area">
+            <div class="perfect-scroll">
+              <div class="mobile-search mobile-header-border mb-30">
+                <form action="#">
+                  <input type="text" placeholder="Search…"><i class="fas fa-search"></i>
+                </form>
+              </div>
+              <div class="mobile-menu-wrap mobile-header-border">
+                <!-- mobile menu start-->
+                <nav>
+                  <ul class="mobile-menu font-heading">
+                    <li class="has-children"><a class="active" href="index.html">Home</a>
+                    </li>
+                    <li class="has-children"><a href="">Find a Job</a>
+                      <ul class="sub-menu">
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="post.html">Post a Job</a></li>
+                      </ul>
+                    </li>
+                    <li ><a href="recruiters.html">Recruiters</a>
+                    </li>
+                    
+                    <li class="has-children"><a href="">Pages</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="pricing.html">Pricing Plan</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="term.html">Terms & Conditions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="signin.html">Signin</a></li>
+                        <li><a href="reset-password.html">Reset Password</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-children"><a href="blog.html">Blog</a>
+                    </li>
+                    <li><a href="" target="_blank">Dashboard</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mobile-account">
+                <h6 class="mb-10">Your Account</h6>
+                <ul class="mobile-menu font-heading">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Work Preferences</a></li>
+                  <li><a href="#">Account Settings</a></li>
+                  <li><a href="#">Go Pro</a></li>
+                  <li><a href="signout.html">Sign Out</a></li>
+                </ul>
+              </div>
+              <div class="site-copyright">Copyright 2022 &copy; Box. <br>Designed by Blaqcoder.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <div class="bg-homepage1"></div>
+        <section class="section-box">
+          <div class="banner-hero hero-1">
+            <div class="banner-inner">
+              <div class="row">
+                <div class="col-xl-8 col-lg-12">
+                  <div class="block-banner">
+                    <h1 class="heading-banner wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">The <span class="color-brand-2">Easiest Way</span><br class="d-none d-lg-block">to Get Your New Job</h1>
+                    <div class="banner-description wow fadeInUp animated animated" data-wow-delay=".1s" data-wow-duration="1500ms">Each month, more than 3 million job seekers turn to <br class="d-none d-lg-block">website in their search for work, making over 140,000 <br class="d-none d-lg-block">applications every single day</div>
+                    <div class="form-find wow fadeIn animated animated" data-wow-delay=".2s" data-wow-duration="1500ms">
+                      <form>
+                        <div class="box-industry">
+                          <select class="form-input mr-10 select-active input-industry">
+                            <option value="0">Industry</option>
+                            <option value="1">Software</option>
+                            <option value="2">Finance</option>
+                            <option value="3">Recruting</option>
+                            <option value="4">Management</option>
+                            <option value="5">Advertising</option>
+                            <option value="6">Development</option>
+                          </select>
+                        </div>
+                        <select class="form-input mr-10 select-active">
+                          <option value="">Location</option>
+                          <option value="AX">Aland Islands</option>
+                          <option value="AF">Afghanistan</option>
+                          <option value="AL">Albania</option>
+                          <option value="DZ">Algeria</option>
+                          <option value="AD">Andorra</option>
+                          <option value="AO">Angola</option>
+                          <option value="AI">Anguilla</option>
+                          <option value="AQ">Antarctica</option>
+                          <option value="AG">Antigua and Barbuda</option>
+                          <option value="AR">Argentina</option>
+                          <option value="AM">Armenia</option>
+                          <option value="AW">Aruba</option>
+                          <option value="AU">Australia</option>
+                          <option value="AT">Austria</option>
+                          <option value="AZ">Azerbaijan</option>
+                          <option value="BS">Bahamas</option>
+                          <option value="BH">Bahrain</option>
+                          <option value="BD">Bangladesh</option>
+                          <option value="BB">Barbados</option>
+                          <option value="BY">Belarus</option>
+                          <option value="PW">Belau</option>
+                          <option value="BE">Belgium</option>
+                          <option value="BZ">Belize</option>
+                          <option value="BJ">Benin</option>
+                          <option value="BM">Bermuda</option>
+                          <option value="BT">Bhutan</option>
+                          <option value="BO">Bolivia</option>
+                          <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                          <option value="BA">Bosnia and Herzegovina</option>
+                          <option value="BW">Botswana</option>
+                          <option value="BV">Bouvet Island</option>
+                          <option value="BR">Brazil</option>
+                          <option value="IO">British Indian Ocean Territory</option>
+                          <option value="VG">British Virgin Islands</option>
+                          <option value="BN">Brunei</option>
+                          <option value="BG">Bulgaria</option>
+                          <option value="BF">Burkina Faso</option>
+                          <option value="BI">Burundi</option>
+                          <option value="KH">Cambodia</option>
+                          <option value="CM">Cameroon</option>
+                          <option value="CA">Canada</option>
+                          <option value="CV">Cape Verde</option>
+                          <option value="KY">Cayman Islands</option>
+                          <option value="CF">Central African Republic</option>
+                          <option value="TD">Chad</option>
+                          <option value="CL">Chile</option>
+                          <option value="CN">China</option>
+                          <option value="CX">Christmas Island</option>
+                          <option value="CC">Cocos (Keeling) Islands</option>
+                          <option value="CO">Colombia</option>
+                          <option value="KM">Comoros</option>
+                          <option value="CG">Congo (Brazzaville)</option>
+                          <option value="CD">Congo (Kinshasa)</option>
+                          <option value="CK">Cook Islands</option>
+                          <option value="CR">Costa Rica</option>
+                          <option value="HR">Croatia</option>
+                          <option value="CU">Cuba</option>
+                          <option value="CW">Cura&Ccedil;ao</option>
+                          <option value="CY">Cyprus</option>
+                          <option value="CZ">Czech Republic</option>
+                          <option value="DK">Denmark</option>
+                          <option value="DJ">Djibouti</option>
+                          <option value="DM">Dominica</option>
+                          <option value="DO">Dominican Republic</option>
+                          <option value="EC">Ecuador</option>
+                          <option value="EG">Egypt</option>
+                          <option value="SV">El Salvador</option>
+                          <option value="GQ">Equatorial Guinea</option>
+                          <option value="ER">Eritrea</option>
+                          <option value="EE">Estonia</option>
+                          <option value="ET">Ethiopia</option>
+                          <option value="FK">Falkland Islands</option>
+                          <option value="FO">Faroe Islands</option>
+                          <option value="FJ">Fiji</option>
+                          <option value="FI">Finland</option>
+                          <option value="FR">France</option>
+                          <option value="GF">French Guiana</option>
+                          <option value="PF">French Polynesia</option>
+                          <option value="TF">French Southern Territories</option>
+                          <option value="GA">Gabon</option>
+                          <option value="GM">Gambia</option>
+                          <option value="GE">Georgia</option>
+                          <option value="DE">Germany</option>
+                          <option value="GH">Ghana</option>
+                          <option value="GI">Gibraltar</option>
+                          <option value="GR">Greece</option>
+                          <option value="GL">Greenland</option>
+                          <option value="GD">Grenada</option>
+                          <option value="GP">Guadeloupe</option>
+                          <option value="GT">Guatemala</option>
+                          <option value="GG">Guernsey</option>
+                          <option value="GN">Guinea</option>
+                          <option value="GW">Guinea-Bissau</option>
+                          <option value="GY">Guyana</option>
+                          <option value="HT">Haiti</option>
+                          <option value="HM">Heard Island and McDonald Islands</option>
+                          <option value="HN">Honduras</option>
+                          <option value="HK">Hong Kong</option>
+                          <option value="HU">Hungary</option>
+                          <option value="IS">Iceland</option>
+                          <option value="IN">India</option>
+                          <option value="ID">Indonesia</option>
+                          <option value="IR">Iran</option>
+                          <option value="IQ">Iraq</option>
+                          <option value="IM">Isle of Man</option>
+                          <option value="IL">Israel</option>
+                          <option value="IT">Italy</option>
+                          <option value="CI">Ivory Coast</option>
+                          <option value="JM">Jamaica</option>
+                          <option value="JP">Japan</option>
+                          <option value="JE">Jersey</option>
+                          <option value="JO">Jordan</option>
+                          <option value="KZ">Kazakhstan</option>
+                          <option value="KE">Kenya</option>
+                          <option value="KI">Kiribati</option>
+                          <option value="KW">Kuwait</option>
+                          <option value="KG">Kyrgyzstan</option>
+                          <option value="LA">Laos</option>
+                          <option value="LV">Latvia</option>
+                          <option value="LB">Lebanon</option>
+                          <option value="LS">Lesotho</option>
+                          <option value="LR">Liberia</option>
+                          <option value="LY">Libya</option>
+                          <option value="LI">Liechtenstein</option>
+                          <option value="LT">Lithuania</option>
+                          <option value="LU">Luxembourg</option>
+                          <option value="MO">Macao S.A.R., China</option>
+                          <option value="MK">Macedonia</option>
+                          <option value="MG">Madagascar</option>
+                          <option value="MW">Malawi</option>
+                          <option value="MY">Malaysia</option>
+                          <option value="MV">Maldives</option>
+                          <option value="ML">Mali</option>
+                          <option value="MT">Malta</option>
+                          <option value="MH">Marshall Islands</option>
+                          <option value="MQ">Martinique</option>
+                          <option value="MR">Mauritania</option>
+                          <option value="MU">Mauritius</option>
+                          <option value="YT">Mayotte</option>
+                          <option value="MX">Mexico</option>
+                          <option value="FM">Micronesia</option>
+                          <option value="MD">Moldova</option>
+                          <option value="MC">Monaco</option>
+                          <option value="MN">Mongolia</option>
+                          <option value="ME">Montenegro</option>
+                          <option value="MS">Montserrat</option>
+                          <option value="MA">Morocco</option>
+                          <option value="MZ">Mozambique</option>
+                          <option value="MM">Myanmar</option>
+                          <option value="NA">Namibia</option>
+                          <option value="NR">Nauru</option>
+                          <option value="NP">Nepal</option>
+                          <option value="NL">Netherlands</option>
+                          <option value="AN">Netherlands Antilles</option>
+                          <option value="NC">New Caledonia</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="NI">Nicaragua</option>
+                          <option value="NE">Niger</option>
+                          <option value="NG">Nigeria</option>
+                          <option value="NU">Niue</option>
+                          <option value="NF">Norfolk Island</option>
+                          <option value="KP">North Korea</option>
+                          <option value="NO">Norway</option>
+                          <option value="OM">Oman</option>
+                          <option value="PK">Pakistan</option>
+                          <option value="PS">Palestinian Territory</option>
+                          <option value="PA">Panama</option>
+                          <option value="PG">Papua New Guinea</option>
+                          <option value="PY">Paraguay</option>
+                          <option value="PE">Peru</option>
+                          <option value="PH">Philippines</option>
+                          <option value="PN">Pitcairn</option>
+                          <option value="PL">Poland</option>
+                          <option value="PT">Portugal</option>
+                          <option value="QA">Qatar</option>
+                          <option value="IE">Republic of Ireland</option>
+                          <option value="RE">Reunion</option>
+                          <option value="RO">Romania</option>
+                          <option value="RU">Russia</option>
+                          <option value="RW">Rwanda</option>
+                          <option value="ST">S&atilde;o Tom&eacute; and Pr&iacute;ncipe</option>
+                          <option value="BL">Saint Barth&eacute;lemy</option>
+                          <option value="SH">Saint Helena</option>
+                          <option value="KN">Saint Kitts and Nevis</option>
+                          <option value="LC">Saint Lucia</option>
+                          <option value="SX">Saint Martin (Dutch part)</option>
+                          <option value="MF">Saint Martin (French part)</option>
+                          <option value="PM">Saint Pierre and Miquelon</option>
+                          <option value="VC">Saint Vincent and the Grenadines</option>
+                          <option value="SM">San Marino</option>
+                          <option value="SA">Saudi Arabia</option>
+                          <option value="SN">Senegal</option>
+                          <option value="RS">Serbia</option>
+                          <option value="SC">Seychelles</option>
+                          <option value="SL">Sierra Leone</option>
+                          <option value="SG">Singapore</option>
+                          <option value="SK">Slovakia</option>
+                          <option value="SI">Slovenia</option>
+                          <option value="SB">Solomon Islands</option>
+                          <option value="SO">Somalia</option>
+                          <option value="ZA">South Africa</option>
+                          <option value="GS">South Georgia/Sandwich Islands</option>
+                          <option value="KR">South Korea</option>
+                          <option value="SS">South Sudan</option>
+                          <option value="ES">Spain</option>
+                          <option value="LK">Sri Lanka</option>
+                          <option value="SD">Sudan</option>
+                          <option value="SR">Suriname</option>
+                          <option value="SJ">Svalbard and Jan Mayen</option>
+                          <option value="SZ">Swaziland</option>
+                          <option value="SE">Sweden</option>
+                          <option value="CH">Switzerland</option>
+                          <option value="SY">Syria</option>
+                          <option value="TW">Taiwan</option>
+                          <option value="TJ">Tajikistan</option>
+                          <option value="TZ">Tanzania</option>
+                          <option value="TH">Thailand</option>
+                          <option value="TL">Timor-Leste</option>
+                          <option value="TG">Togo</option>
+                          <option value="TK">Tokelau</option>
+                          <option value="TO">Tonga</option>
+                          <option value="TT">Trinidad and Tobago</option>
+                          <option value="TN">Tunisia</option>
+                          <option value="TR">Turkey</option>
+                          <option value="TM">Turkmenistan</option>
+                          <option value="TC">Turks and Caicos Islands</option>
+                          <option value="TV">Tuvalu</option>
+                          <option value="UG">Uganda</option>
+                          <option value="UA">Ukraine</option>
+                          <option value="AE">United Arab Emirates</option>
+                          <option value="GB">United Kingdom (UK)</option>
+                          <option value="US">USA (US)</option>
+                          <option value="UY">Uruguay</option>
+                          <option value="UZ">Uzbekistan</option>
+                          <option value="VU">Vanuatu</option>
+                          <option value="VA">Vatican</option>
+                          <option value="VE">Venezuela</option>
+                          <option value="VN">Vietnam</option>
+                          <option value="WF">Wallis and Futuna</option>
+                          <option value="EH">Western Sahara</option>
+                          <option value="WS">Western Samoa</option>
+                          <option value="YE">Yemen</option>
+                          <option value="ZM">Zambia</option>
+                          <option value="ZW">Zimbabwe</option>
+                        </select>
+                        <input  type="text" class="form-input input-keysearch mr-10"  placeholder="Your keyword... ">
+                        <button class="btn btn-default btn-find font-sm">Search</button>
+                      </form>
+                    </div>
+                    <div class="list-tags-banner mt-60 wow fadeInUp animated animated" data-wow-delay=".3s" data-wow-duration="1500ms"><strong>Popular Searches:</strong><a href="#">Designer</a>, <a href="#">Web</a>, <a href="#">IOS</a>, <a href="#">Developer</a>, <a href="#">PHP</a>, <a href="#">Senior</a>, <a href="#">Engineer</a></div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 d-none d-xl-block col-md-6">
+                  <div class="banner-imgs">
+                    <div class="block-1 shape-1"><img class="img-responsive" alt="Box" src="img/banner1.png"></div>
+                    <div class="block-2 shape-2"><img class="img-responsive" alt="Box" src="img/banner2.png"></div>
+                    <div class="block-3 shape-3"><img class="img-responsive" alt="Box" src="img/icon-top-banner.png"></div>
+                    <div class="block-4 shape-3"><img class="img-responsive" alt="Box" src="img/icon-bottom-banner.png"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ <!-- START CATEGORY -->
+ <section class="section">
+  <div class="container wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+      <div class="row justify-content-center">
+          <div class="col-lg-6">
+              <div class="section-title text-center">
+                  <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Browser Jobs Categories </h2>
+                  <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay=".3s" data-wow-duration="1500ms">Post a job to tell us about your project. We'll quickly match you with the
+                      right freelancers.</p>
+              </div>
+          </div>
+          <!--end col-->
+      </div>
+      <!--end row-->
+      <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-layer-group"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">IT & Software</h5>
+                      </a>
+                      <p class="text-muted mb-0">2024 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-memory"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Technology</h5>
+                      </a>
+                      <p class="text-muted mb-0">1250 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Government</h5>
+                      </a>
+                      <p class="text-muted mb-0">802 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-university"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Accounting / Finance</h5>
+                      </a>
+                      <p class="text-muted mb-0">577 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-hospital-alt"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Construction / Facilities</h5>
+                      </a>
+                      <p class="text-muted mb-0">285 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fab fa-telegram-plane"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Tele-communications</h5>
+                      </a>
+                      <p class="text-muted mb-0">495 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fas fa-images"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Design & Multimedia</h5>
+                      </a>
+                      <p class="text-muted mb-0">1045 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+          <div class="col-lg-3 col-md-6 mt-4 pt-2">
+              <div class="popu-category-box rounded text-center">
+                  <div class="popu-category-icon icons-md">
+                    <i class="fa fa-android" aria-hidden="true"></i>
+                  </div>
+                  <div class="popu-category-content mt-4">
+                      <a href="job-categories.html" class="text-dark stretched-link">
+                          <h5 class="fs-18">Human Resource</h5>
+                      </a>
+                      <p class="text-muted mb-0">1516 Jobs</p>
+                  </div>
+              </div><!--end popu-category-box-->
+          </div>
+          <!--end col-->
+      </div>
+      <!--end row-->
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="mt-5 text-center">
+                  <a href="job-categories.html" class="btn btn-default btn-shadow ml-40 hover-up">Browse All Categories <i class="fas fa-arrow-right"></i></a>
+              </div>
+          </div><!--end col-->
+      </div><!--end row-->
+  </div>
+  <!--end container-->
+</section>
+<!-- END CATEGORY -->
+
+<section class="section mb-30">
+  <div class="container">
+    <div class="box-we-hiring wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+      <div class="text-1"><span class="text-we-are">We are</span><span class="text-hiring">Hiring</span></div>
+      <div class="text-2">Let&rsquo;s <span class="color-brand-1">Work</span> Together<br> &amp; <span class="color-brand-1">Explore</span> Opportunities</div>
+      <div class="text-3">
+        <div class="btn btn-apply btn-apply-icon" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- START JOB-LIST -->
+ <section class="section mt-50">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms">Jobs of the day</h2>
+      <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms">Search and connect with the right candidates faster. </p>
+      <div class="list-tabs mt-40">
+        <ul class="nav nav-tabs" role="tablist">
+          <li><a class="active" id="nav-tab-job-1" href="#tab-job-1" data-toggle="tab" role="tab" aria-controls="tab-job-1" aria-selected="true"> Management</a></li>
+          <li><a id="nav-tab-job-2" href="#tab-job-2" data-toggle="tab" role="tab" aria-controls="tab-job-2" aria-selected="false"> Marketing &amp; Sale</a></li>
+          <li><a id="nav-tab-job-3" href="#tab-job-3" data-toggle="tab" role="tab" aria-controls="tab-job-3" aria-selected="false"> Finance</a></li>
+          <li><a id="nav-tab-job-4" href="#tab-job-4" data-toggle="tab" role="tab" aria-controls="tab-job-4" aria-selected="false"> Human Resource</a></li>
+          <li><a id="nav-tab-job-5" href="#tab-job-5" data-toggle="tab" role="tab" aria-controls="tab-job-5" aria-selected="false"> Retail &amp; Products</a></li>
+          <li><a id="nav-tab-job-6" href="#tab-job-6" data-toggle="tab" role="tab" aria-controls="tab-job-6" aria-selected="false"> Content Writer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-70">
+      <div class="tab-content" id="myTabContent-1">
+        <div class="tab-pane fade show active" id="tab-job-1" role="tabpanel" aria-labelledby="tab-job-1">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-job-2" role="tabpanel" aria-labelledby="tab-job-2">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-job-3" role="tabpanel" aria-labelledby="tab-job-3">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-job-4" role="tabpanel" aria-labelledby="tab-job-4">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-job-5" role="tabpanel" aria-labelledby="tab-job-5">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="#">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tab-job-6" role="tabpanel" aria-labelledby="tab-job-6">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-8.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Periscope</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Lead Quality Control QA</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">iOS</a><a class="btn btn-grey-small mr-5" href="#">Laravel</a><a class="btn btn-grey-small mr-5" href="#">Golang</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-1.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">LinkedIn</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">UI / UX Designer fulltime</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Adobe XD</a><a class="btn btn-grey-small mr-5" href="'#'">Figma</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-2.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Adobe Ilustrator</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Full Stack Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">React</a><a class="btn btn-grey-small mr-5" href="#">NodeJS</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-3.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Bing Search</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Java Software Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Python</a><a class="btn btn-grey-small mr-5" href="#">AWS</a><a class="btn btn-grey-small mr-5" href="#">Photoshop</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-4.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Dailymotion</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Frontend Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Typescript</a><a class="btn btn-grey-small mr-5" href="#">Java</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-5.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Linkedin</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">React Native Web Developer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">Angular</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$500</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-6.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Quora JSC</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Senior System Engineer</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Part time</span><span class="card-time">5<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">PHP</a><a class="btn btn-grey-small mr-5" href="#">Android</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$800</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="card-grid-2 hover-up">
+                <div class="card-grid-2-image-left"><span class="flash"></span>
+                  <div class="image-box"><img src="img/brand-7.png" alt="jobBox"></div>
+                  <div class="right-info"><a class="name-job" href="#">Nintendo</a><span class="location-small">New York, US</span></div>
+                </div>
+                <div class="card-block-info">
+                  <h6><a href="#">Products Manager</a></h6>
+                  <div class="mt-5"><span class="card-briefcase">Full time</span><span class="card-time">6<span> minutes ago</span></span></div>
+                  <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur.</p>
+                  <div class="mt-30"><a class="btn btn-grey-small mr-5" href="#">ASP .Net</a><a class="btn btn-grey-small mr-5" href="#">Figma</a>
+                  </div>
+                  <div class="card-2-bottom mt-30">
+                    <div class="row">
+                      <div class="col-lg-7 col-7"><span class="card-text-price">$250</span><span class="text-muted">/Hour</span></div>
+                      <div class="col-lg-5 col-5 text-end">
+                        <div class="btn btn-apply-now" data-toggle="modal" data-target="#ModalApplyJobForm">Apply now</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END JOB-LIST -->
+
+<!-- START PROCESS -->
+<section class="section">
+ <div class="container">
+ <div class="row align-items-center">
+<div class="col-lg-6">
+  <div class="section-title me-5">
+    <h3 class="title wow fadeInUp animated animated" data-wow-delay="400ms">How It Work</h3>
+  <p class="text-muted wow fadeInUp animated animated" data-wow-delay="400ms">Post a job to tell us about your project. We'll quickly match you with the right freelancers.</p>
+<div class="process-menu nav flex-column nav-pills wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+    <div class="d-flex">
+        <div class="number flex-shrink-0"> 1 </div>
+<div class="flex-grow-1 text-start ms-3">
+  <h5 class="fs-18">Register an account</h5>
+<p class="text-muted mb-0">Due to its widespread use as filler text for layouts, non-readability is of great importance.</p>
+</div>
+  </div>
+  </a>
+  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+ <div class="d-flex">
+   <div class="number flex-shrink-0"> 2 </div>
+<div class="flex-grow-1 text-start ms-3">
+  <h5 class="fs-18">Find your job</h5>
+  <p class="text-muted mb-0">There are many variations of passages of avaibookmark-label, but the majority
+                                                          alteration in some form.</p>
+                                                  </div>
+                                              </div>
+                                          </a>
+                                          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                              <div class=" d-flex">
+                                                  <div class="number flex-shrink-0">
+                                                      3
+                                                  </div>
+                                                  <div class="flex-grow-1 text-start ms-3">
+                                                      <h5 class="fs-18">Apply for job</h5>
+                                                      <p class="text-muted mb-0">It is a long established fact that a reader will be distracted by the
+                                                          readable content of a page.</p>
+                                                  </div>
+                                              </div>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div><!--end col-->
+                              <div class="col-lg-6">
+                                  <div class="tab-content" id="v-pills-tabContent">
+                                      <div class="tab-pane fade show active wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                          <img src="img/process-01.png" alt="" class="img-fluid">
+                                      </div>
+                                      <div class="tab-pane fade wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                          <img src="img/process-02.png" alt="" class="img-fluid">
+                                      </div>
+                                      <div class="tab-pane fade wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                          <img src="img/process-03.png" alt="" class="img-fluid">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> <!--end row-->
+                      </div><!--end container-->
+                  </section>
+                  <!-- END PROCESS -->
+<!--Why You Choose Job Among Other Job Site -->
+<section class="space-pb">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-md-5 mb-lg-0 pe-lg-5">
+        <div class="row">
+          <div class="col-sm-7">
+            <img class="img-fluid w-100 wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" src="img/01.png" alt="">
+          </div>
+          <div class="col-sm-5 mt-sm-5 mt-4">
+            <img class="img-fluid mb-sm-2 w-100 wow fadeInDown animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" src="img/02.png" alt="">
+            <div class=" mt-3 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <a class="popup-icon  bg-holder bg-overlay-black-80" data-fancybox href="https://youtu.be/YXgXw25E5RU">
+                <i class="fas fa-play" style="color: #a1b5d9;"></i>
+                <img class="img-fluid w-100" src="img/03.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 pt-2 pt-sm-3 pt-md-0">
+        <div class="section-title">
+          <h2 class="title wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Why You Choose Job Among Other Job Site?</h2>
+          <p class="wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">I truly believe Augustine’s words are true and if you look at history you know it is true. There are many people in the world with amazing talents. who realize only a small percentage of their potential. We all know people who live this truth.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="d-flex mb-lg-5 mb-4">
+              <i class="fas fa-users font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Best talented people</h6>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex mb-lg-5 mb-4">
+              <i class="fas fa-file-signature font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Easy to find candidate</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="d-flex mb-md-0 mb-4">
+              <i class="fas fa-comments font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Easy to communicate</h6>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex">
+              <i class="fas fa-globe-africa font-xlll"></i>
+              <h6 class="ps-3 align-self-center mb-0">Global recruitment option</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Why You Choose Job Among Other Job Site -->
+<!-- Start Global Talent Area -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 col-md-6">
+        <div class="global-talent-content">
+          <div class="section-title">
+          <h3 class="title wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Global Talent</h3>
+        </div>
+          <h2 class="wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Grow Your Career, Dream Your Jobs Are Waiting</h2>
+
+          <ul class="wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <li>
+              <img src="img/talent-dot-1.png" alt="Image">
+              Full & Part-Time Jobs
+            </li>
+            
+            <li>
+              <img src="img/talent-dot-2.png" alt="Image">
+              Employee & Freelance
+            </li>
+
+            <li>
+              <img src="img/talent-dot-3.png" alt="Image">
+              Flexible On-Site
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-6">
+        <div class="box-site-status wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+          <h3>Box Site Status</h3>
+          
+          <div class="site-status wow fadeInRight animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-counter">
+
+                  <h2>
+                    <span class="odometer" data-count="10523">00</span> 
+                  </h2>
+    
+                  <p>Jobs Added</p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-counter">
+
+                  <h2>
+                    <span class="odometer" data-count="123843">00</span> 
+                  </h2>
+    
+                  <p>Companies</p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-counter">
+
+                  <h2>
+                    <span class="odometer" data-count="20537">00</span> 
+                  </h2>
+    
+                  <p>Resume</p>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-counter">
+
+                  <h2>
+                    <span class="odometer" data-count="18523">00</span> 
+                  </h2>
+    
+                  <p>Members</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Global Talent Area -->
+<!-- testimonial start -->
+<section class="section">
+  <div class="container">
+  <div class="row">
+  <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+  <div class="text-center">
+    <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Our Testimonials</h2>
+    <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">What Our Client Says</p>
+  </div>
+  </div>
+  </div>
+  <div class="testimonial-slider-three owl-carousel">
+  <div class="testimonial-card style3">
+  <span class="quote-icon">
+    <i class="fas fa-quote-right"></i>
+  </span>
+  <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+  <div class="testimonial-card-thumb">
+  <div class="client-info-wrap">
+  <div class="client-img">
+  <img src="img/client-7.jpg" alt="Image">
+  </div>
+  <div class="client-info">
+  <h4>Shonda Leer</h4>
+  <span>Director, BAT</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="testimonial-card style3">
+   <span class="quote-icon">
+    <i class="fas fa-quote-right"></i>
+  </span>
+  <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+  <div class="testimonial-card-thumb">
+  <div class="client-info-wrap">
+  <div class="client-img">
+  <img src="img/client-1.jpg" alt="Image">
+  </div>
+  <div class="client-info">
+  <h4>Alex Cruis</h4>
+  <span>CEO, IBAC</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="testimonial-card style3">
+  <span class="quote-icon">
+    <i class="fas fa-quote-right"></i>
+  </span>
+  <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+  <div class="testimonial-card-thumb">
+  <div class="client-info-wrap">
+  <div class="client-img">
+  <img src="img/client-2.jpg" alt="Image">
+  </div>
+  <div class="client-info">
+  <h4>Marion Ott</h4>
+  <span>Founder, Olleo</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="testimonial-card style3">
+  <span class="quote-icon">
+    <i class="fas fa-quote-right"></i>
+  </span>
+  <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+  <div class="testimonial-card-thumb">
+  <div class="client-info-wrap">
+  <div class="client-img">
+  <img src="img/client-3.jpg" alt="Image">
+  </div>
+  <div class="client-info">
+  <h4>Harry Jackson</h4>
+  <span>Enterpreneur</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="testimonial-card style3">
+  <span class="quote-icon">
+    <i class="fas fa-quote-right"></i>
+  </span>
+  <p class="client-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, quis nostrud exercise amet loremtation amet ullamco laboris nisi ut aliquip ex eacoo consequat. Duisaute irure dolor in reprehen ametderit in voluptate velit esse cillum dolore eu fugiat.</p>
+  <div class="testimonial-card-thumb">
+  <div class="client-info-wrap">
+  <div class="client-img">
+  <img src="img/client-4.jpg" alt="Image">
+  </div>
+  <div class="client-info">
+  <h4>Brock Lee</h4>
+  <span>Developer</span>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!-- testimonial end -->
+  <!-- job places section strat -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Jobs by Location</h2>
+      <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Find your favourite jobs and get the benefits of yourself</p>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row mt-50">
+          <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="job-places wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                  <div class="job-places-inner">
+                      <div class="job-places-overflow">
+                          <div class="job-places-photo">
+                              <div class="job-places-photodd">
+                                  <img class="img-fluid big-img w-100" src="img/location1.jpg" alt="properties">
+                              </div>
+                          </div>
+                          <div class="info">
+                              <h3>
+                                  <a href="">United States</a>
+                              </h3>
+                              <div class="row">
+                                <div class="col-lg-6 col-6"><span class="text-14">5 Vacancy</span></div>
+                                <div class="col-lg-6 col-6 text-end"><span class="text-14">120 companies</span></div>
+                              </div>
+                          </div>
+                          <div class="new">New</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-7 col-md-12 col-sm-12">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="job-places wow fadeInDown animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                          <div class="job-places-inner">
+                              <div class="job-places-overflow">
+                                  <div class="job-places-photo">
+                                      <img class="img-fluid w-100" src="img/location2.jpg" alt="properties">
+                                  </div>
+                                  <div class="info">
+                                      <h3>
+                                          <a href="">United States</a>
+                                      </h3>
+                                      <div class="row">
+                                        <div class="col-lg-6 col-6"><span class="text-14">7 Vacancy</span></div>
+                                        <div class="col-lg-6 col-6 text-end"><span class="text-14">68 companies</span></div>
+                                      </div>
+                                  </div>
+                                  <div class="new">Trending</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="job-places wow fadeInDown animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                          <div class="job-places-inner">
+                              <div class="job-places-overflow">
+                                  <div class="job-places-photo">
+                                      <img class="img-fluid w-100" src="img/location3.jpg" alt="properties">
+                                  </div>
+                                  <div class="info">
+                                      <h3>
+                                          <a href="">California</a>
+                                      </h3>
+                                      <div class="row">
+                                        <div class="col-lg-6 col-6"><span class="text-14">9 Vacancy</span></div>
+                                        <div class="col-lg-6 col-6 text-end"><span class="text-14">80 companies</span></div>
+                                      </div>
+                                  </div>
+                                  <div class="new">New</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="job-places wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                          <div class="job-places-inner">
+                              <div class="job-places-overflow">
+                                  <div class="job-places-photo w-100">
+                                      <img class="img-fluid" src="img/location4.jpg" alt="properties">
+                                  </div>
+                                  <div class="info">
+                                      <h3>
+                                          <a href="">Rome</a>
+                                      </h3>
+                                      <div class="row">
+                                        <div class="col-lg-6 col-6"><span class="text-14">16 Vacancy</span></div>
+                                        <div class="col-lg-6 col-6 text-end"><span class="text-14">86 companies</span></div>
+                                      </div>
+                                  </div>
+                                  <div class="new">New</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="job-places wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                          <div class="job-places-inner">
+                              <div class="job-places-overflow">
+                                  <div class="job-places-photo w-100">
+                                      <img class="img-fluid" src="img/location5.jpg" alt="properties">
+                                  </div>
+                                  <div class="info">
+                                      <h3>
+                                          <a href="#">London</a>
+                                      </h3>
+                                      <div class="row">
+                                        <div class="col-lg-6 col-6"><span class="text-14">39 Vacancy</span></div>
+                                        <div class="col-lg-6 col-6 text-end"><span class="text-14">180 companies</span></div>
+                                      </div>
+                                  </div>
+                                  <div class="new">New</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- job places section end -->
+<!-- trust start -->
+
+<div class="section mt-70">
+  <div class="container">
+    <div class="box-trust">
+      <div class="row">
+        <div class="left-trust col-lg-2 col-md-3 col-sm-3 col-3">
+          <h4 class="color-text-paragraph-2">Trusted by</h4>
+        </div>
+        <div class="right-logos col-lg-10 col-md-9 col-sm-9 col-9">
+          <div class="owl-carousel owl-theme clients-carousel">
+                <div class="item box"><a href="#"><img src="img/microsoft.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/sony.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/acer.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/nokia.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/asus.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/casio.svg" alt="jobBox"></a></div>
+                <div class="item box"><a href="#"><img src="img/dell.svg" alt="jobBox"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- trust end -->
+<!-- app start -->
+<section class="section">
+  <div class="container">
+  <div class="row align-items-center">
+  <div class="col-lg-6 col-md-12">
+  <div class="app-content wow fadeInLeft animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+  <span>Download Our Mobile App</span>
+  <h3>You Can Find All The Thing You Need In Our Mobile App</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisl bibendum vitae consequat. Nisl ut sed accumsan.</p>
+  <div class="app-btn-box">
+  <a href="#" class="appstore-btn" target="_blank">
+    <i class="fab fa-apple"></i>
+  Download On
+  <span>App Store</span>
+  </a>
+  <a href="#" class="google-btn" target="_blank">
+    <i class="fab fa-google"></i>
+  Download On
+  <span>Google Play</span>
+  </a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-6 col-md-12">
+  <div class="app-image wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+  <img src="img/iphone.png" alt="image">
+  <div class="circle-pattern wow fadeInDown animated animated" data-wow-delay="400ms" data-wow-duration="1500ms"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+<!-- app end -->
+
+<!-- newsletter start -->
+<section class="section mt-50 mb-20">
+  <div class="container">
+    <div class="box-newsletter">
+      <div class="row">
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-left.png" alt="joxBox"></div>
+        <div class="col-lg-12 col-xl-6 col-12">
+          <h2 class="text-md-newsletter text-center">New Things Will Always<br> Update Regularly</h2>
+          <div class="box-form-newsletter mt-40">
+            <form class="form-newsletter">
+              <input class="input-newsletter" type="text" value="" placeholder="Enter your email here">
+              <button class="btn btn-default font-heading icon-send-letter">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-3 col-12 text-center d-none d-xl-block"><img src="img/newsletter-right.png" alt="joxBox"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- newsletter end -->
+
+<section class="section-box mt-50 mb-50">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title mb-10 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">News and Blog</h2>
+      <p class="font-lg color-text-paragraph-2 wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">Get the latest news, updates and tips</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mt-50">
+      <div class="box-swiper style-nav-top">
+        <div class="swiper-container swiper-group-3 swiper">
+          <div class="swiper-wrapper pb-70 pt-5">
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big3.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Work-From-Home Jobs That Pay Well</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/ava_1.png"><span class="color-white font-sm mr-25">Alice Json</span><span class="color-white font-sm">29 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big3.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Work-From-Home Jobs That Pay Well</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/ava_1.png"><span class="color-white font-sm mr-25">Alice Json</span><span class="color-white font-sm">29 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+            <div class="swiper-slide wow fadeIn animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+              <div class="card-grid-5 hover-up" style="background-image: url('img/img-big2.png')"><a href="blog-details.html">
+                <div class="box-cover-img">
+                  <div class="content-bottom">
+                    <h3 class="color-white mb-20">Recruiter and Land Your Dream Job</h3>
+                    <div class="author d-flex align-items-center mr-20"><img class="mr-10" alt="jobBox" src="img/user1.png"><span class="color-white font-sm mr-25">Thompson</span><span class="color-white font-sm">28 April 2022</span></div>
+                  </div>
+                </div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="text-center"><a class="btn btn-brand-1 btn-icon-load mt--30 hover-up" href="blog-grid.html">Load More Posts</a></div>
+    </div>
+  </div>
+</section>
+</main>
+ <!-- START FOOTER -->
+ <section class="bg-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+                  <h4 class="text-white mb-4">Joblab</h4>
+                  <p class="text-white-50">It is a long established fact that a reader will be of a page reader
+                      will be of at its layout.</p>
+                  <h6 class="text-white mt-3">Follow Us on:</p>
+                  <ul class="footer-social-menu list-inline mb-0">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Company</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                      <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                      <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                      <li><a href="team.html"><i class="fas fa-chevron-right"></i> Team</a></li>
+                      <li><a href="pricing.html"><i class="fas fa-chevron-right"></i> Pricing</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">For Jobs</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Feature</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> Credit</a></li>
+                      <li><a href=""><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+              <div class="footer-item mt-4 mt-lg-0">
+                  <h6 class="fs-16 text-white mb-4">Support</h6>
+                  <ul class="list-unstyled footer-list mb-0">
+                      <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                      <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQ'S</a></li>
+                      <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                  </ul>
+              </div>
+          </div><!--end col-->
+          <div class="col-lg-2 col-6">
+            <div class="footer-item mt-4 mt-lg-0">
+                <h6 class="text-white fs-16 mb-4">Contact</h6>
+                <ul class="list-unstyled footer-list address mb-0">
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:</span>
+                    <a href="">+1 (768) 8765-787</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:</span>
+                    <span>Phone:</span>
+                    <a href="">joblab@gmail.com</a>
+                  </li>
+                  <li class="location">
+                    <i class="fas fa-map-pin"></i>
+                    <span>Address:</span>
+                    6890 Blvd, The Bronx, NY 1058 New York, USA
+                  </li>
+                </ul>
+            </div>
+        </div><!--end col-->
+      </div><!--end row-->
+  </div><!--end container-->
+</section>
+<!-- END FOOTER -->
+
+   <!-- START FOOTER-ALT -->
+   <div class="footer-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-white-50 text-center mb-0">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Joblab - Job Listing Page
+                    Website by <a href="" target="_blank"
+                        class="text-reset text-decoration-underline">Blaqcoder</a>
+                </p>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</div>
+<!-- END FOOTER -->
+ <!-- back to top area start -->
+ <div class="back-to-top">
+  <span class="back-top"><i class="fa fa-angle-up"></i></span>
+</div>
+<!-- back to top area end -->
+     <!-- js-link -->
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ <script src="js/wow.js"></script>
+ <script src="js/isotope.js"></script>
+ <script src="js/select2.min.js"></script>
+ <script src="js/scrollup.js"></script>
+ <script src="js/perfect-scrollbar.min.js"></script>
+ <script src="js/jquery.appear.min.js"></script>
+ <script src="js/odometer.min.js"></script>
+ <script src="js/fancybox.js"></script>
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/app.js"></script>
+ <script>
+    /*----------------------------------------
+           back to top
+        ----------------------------------------*/
+        $(document).on('click', '.back-to-top', function () {
+          $("html,body").animate({
+              scrollTop: 0
+          }, 100);
+      });
+      $(window).on("scroll", function() {
+        /*---------------------------------------
+            back-to-top
+        -----------------------------------------*/
+        var ScrollTop = $('.back-to-top');
+        if ($(window).scrollTop() > 100) {
+            ScrollTop.fadeIn(500);
+        } else {
+            ScrollTop.fadeOut(500);
+        }
+
+        /*---------------------------------------
+            sticky-active
+        -----------------------------------------*/
+        var scroll = $(window).scrollTop();
+        if (scroll < 445) {
+            $(".navbar").removeClass("sticky-active");
+        } else {
+            $(".navbar").addClass("sticky-active");
+        }
+
+    });
+ </script>
+</body>
+</html>
